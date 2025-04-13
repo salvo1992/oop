@@ -1,19 +1,21 @@
 public class Main {
-    public static void main(String[] args) {
-        Persona p = new Persona("Mario", 30);
-        System.out.println("Nome: " + p.getNome());
-        System.out.println("Eta: " + p.getEta());
-        p.setNome("Luigi");
-        p.setEta(25);
-        System.out.println(  p.toString());
+  public static void main(String[] args) {
+      // Creazione di un oggetto Persona
+      Persona p = new Persona("Mario", 30, "Rossi");
 
+      System.out.println("Nome: " + p.getNome());
+      System.out.println("Età: " + p.getEta());
+      System.out.println("Cognome: " + p.getCognome());
 
+      // Modifica dei valori dell'oggetto Personaclear
+      p.setNome("Luigi");
+      p.setEta(25);
+      p.setCognome("Verdi");
 
-        Cane rex = new Cane("Rex", 5, 30, 25, 60, 20, 4, "marrone", "giardino");
-        System.out.println(rex);
-        System.out.println(rex.corri());  
-
-
-    }
-    
+      System.out.println("Dopo le modifiche:");
+      System.out.println("Nome: " + p.getNome());
+      System.out.println("Età: " + p.getEta());
+      System.out.println("Cognome: " + p.getCognome());
+  }
 }
+
